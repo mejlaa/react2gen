@@ -1,29 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Card from "./components/functional/functional/Card";
+import TwitterCard from "./components/functional/functional/TwitterCard";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
-      <Card
-        name="Aisa Nicevic"
-        job="Najbolji Pyton Coder"
-        url="https://www.w3schools.com/howto/img_avatar.png"
-      />
-      <Card
-        name="Suad Suljovic"
-        job="Developer"
-        url="https://www.w3schools.com/howto/img_avatar.png"
-      />
-      <Card
-        name="Irfan Ugljanin"
-        job="Ne prestaje da prica"
-        url="https://www.w3schools.com/howto/img_avatar.png"
-      />
-    </div>
+    <TwitterCard
+      url="https://cdn-icons-png.flaticon.com/512/1532/1532475.png"
+      title="twitter"
+      about="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      btnUrl="https://twitter.com/"
+    />
   </React.StrictMode>
 );
 

@@ -1,15 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Counter from "./components/functional/class/Counter";
-import CounterF from "./components/functional/functional/CounterF";
-import RandomColor from "./components/functional/functional/RandomColor";
+
+import Badge1 from "./components/functional/functional/Badge1";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RandomColor />
+    <Badge1 type="tip1" />
+    <Badge1 type="tip2" />
+    <Badge1 type="tip3" />
+    <Badge1 type="tip4" />
+    <Badge1 type="tip5" />
   </React.StrictMode>
 );
 

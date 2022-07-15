@@ -1,18 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-import Badge1 from "./components/functional/functional/Badge1";
+import Quotes from "./components/functional/functional/Quotes";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Badge1 type="tip1" />
-    <Badge1 type="tip2" />
-    <Badge1 type="tip3" />
-    <Badge1 type="tip4" />
-    <Badge1 type="tip5" />
+    <Quotes number={10} author="Michael" length={45} />
   </React.StrictMode>
 );
 

@@ -40,4 +40,5 @@ const Badge1 = (props) => {
     </div>
   );
 };
+
 export default Badge1;

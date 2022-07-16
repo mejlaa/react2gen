@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Quotes from "./components/functional/functional/Quotes";
+import SimpleForm from "./components/functional/functional/SimpleForm";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Quotes number={10} author="Michael" length={45} />
+    <SimpleForm />
   </React.StrictMode>
 );
 

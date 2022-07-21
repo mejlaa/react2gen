@@ -1,0 +1,59 @@
+.main {
+  background-color: black;
+  color: white;
+}
+.red {
+  background-color: red;
+  color: white;
+}
+.yellow {
+  background-color: yellow;
+  color: white;
+}
+.white {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.radiusXS {
+  border-radius: 0;
+}
+.radiusSM {
+  border-radius: 10%;
+}
+.radiusMD {
+  border-radius: 20%;
+}
+.radiusLG {
+  border-radius: 30%;
+}
+.radiusXL {
+  border-radius: 40%;
+}
+
+.sizeXS {
+  width: 50px;
+  padding: 10px;
+}
+.sizeSM {
+  width: 100px;
+  padding: 20px;
+}
+.sizeMD {
+  width: 150px;
+  padding: 30px;
+}
+.sizeLG {
+  width: 200px;
+  padding: 40px;
+}
+.sizeXL {
+  width: 250px;
+  padding: 50px;
+}
+
+.normal {
+  padding: 5px 10px;
+  font-size: 18px;
+}

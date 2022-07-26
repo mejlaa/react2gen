@@ -1,0 +1,30 @@
+.kostur {
+  width: auto;
+  height: 100px;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.logo {
+  margin: auto 0;
+  padding-left: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+.menu a {
+  padding-left: 50px;
+  font-size: 16px;
+}

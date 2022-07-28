@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Composition from './components/functional/functional/Composition';
-import MainButton from './components/functional/functional/MainButton';
-import SearchMoch from './components/functional/functional/SearchMock';
-import SimpleForm from './components/functional/functional/SimpleForm';
-import Website from './components/functional/functional/Website';
+import CountDown from './components/functional/functional/CountDown';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Website />
+    <CountDown />
   </React.StrictMode>
 );
 

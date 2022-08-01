@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import CountDown from './components/functional/functional/CountDown';
+import Quote from './components/functional/functional/Quote';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CountDown />
+    <Quote />
   </React.StrictMode>
 );
 

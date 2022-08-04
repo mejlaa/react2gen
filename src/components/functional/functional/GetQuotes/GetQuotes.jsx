@@ -1,6 +1,6 @@
 import { queryByTestId } from '@testing-library/react';
 import { useState, useEffect } from 'react';
-import api from '../../../../api/api';
+import quoteApi from '../../../../api/api';
 import QuoteCard from './QuoteCard';
 
 const GetQuotes = () => {
@@ -8,7 +8,7 @@ const GetQuotes = () => {
 
   const fetchQuotes = async () => {
     try {
-      const result = await api.get(`/quotes`);
+      const result = await quoteApi.get(`/quotes`);
       const data = result.data;
       setQuotes(data.results);
     } catch (error) {

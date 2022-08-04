@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import GetQuotes from './components/functional/functional/GetQuotes/GetQuotes';
-import QuoteCard from './components/functional/functional/GetQuotes/QuoteCard';
-import Quote from './components/functional/functional/Quote';
+import RandomCat from './components/functional/functional/RandomCat/RandomCat';
+import RandomDog from './components/functional/functional/RandomDog/RandomDog';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
@@ -10,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <QuoteCard content="jkdskjsdk" author="bla bla" /> */}
-    <GetQuotes />
+    <RandomDog />
   </React.StrictMode>
 );
 

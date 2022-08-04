@@ -1,7 +1,15 @@
 import axios from 'axios';
 
-const api = axios.create({
+const quoteApi = axios.create({
   baseURL: 'https://api.quotable.io',
 });
 
-export default api;
+const catApi = axios.create({
+  baseURL: 'https://api.thecatapi.com',
+});
+
+const dogApi = axios.create({
+  baseURL: 'https://dog.ceo/api',
+});
+
+export { quoteApi, catApi, dogApi };

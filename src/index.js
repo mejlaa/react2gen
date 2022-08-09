@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import RandomCat from './components/functional/functional/RandomCat/RandomCat';
-import RandomDog from './components/functional/functional/RandomDog/RandomDog';
+import CounterContext from './components/functional/functional/CounterContext';
+import ContextConsumerCounter from './components/functional/functional/CounterContext/index1';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
@@ -9,7 +9,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <QuoteCard content="jkdskjsdk" author="bla bla" /> */}
-    <RandomDog />
+    <div>
+      <CounterContext>
+        <ContextConsumerCounter>
+          <ContextConsumerCounter></ContextConsumerCounter>
+        </ContextConsumerCounter>
+      </CounterContext>
+    </div>
   </React.StrictMode>
 );
 

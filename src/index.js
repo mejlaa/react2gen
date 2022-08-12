@@ -1,21 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import CounterContext from './components/functional/functional/CounterContext';
-import ContextConsumerCounter from './components/functional/functional/CounterContext/index1';
-import './index.css';
+import Memorize from './components/functional/functional/Memorize';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <QuoteCard content="jkdskjsdk" author="bla bla" /> */}
-    <div>
-      <CounterContext>
-        <ContextConsumerCounter>
-          <ContextConsumerCounter></ContextConsumerCounter>
-        </ContextConsumerCounter>
-      </CounterContext>
-    </div>
+    <Memorize />
   </React.StrictMode>
 );
 

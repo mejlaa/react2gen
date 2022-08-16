@@ -1,5 +1,6 @@
 import { parseWithOptions } from 'date-fns/fp';
 import React from 'react';
+import Footer from '../Footer';
 import Nav from '../Nav';
 
 const Layout = props => {
@@ -8,7 +9,7 @@ const Layout = props => {
       <Nav />
       {props.children}
       {/* <Footer /> */}
-      <p>Footer</p>
+      <Footer />
     </>
   );
 };

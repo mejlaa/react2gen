@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Memorize from './components/functional/functional/Memorize';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import RouterPage from './components/functional/functional/RouterPage';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <QuoteCard content="jkdskjsdk" author="bla bla" /> */}
-    <Memorize />
+    <BrowserRouter>
+      <RouterPage />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

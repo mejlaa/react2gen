@@ -1,12 +1,21 @@
+body {
+  margin: 0;
+}
 .nav {
-  height: 80px;
+  height: 90px;
   background-color: rgb(147, 147, 228);
   padding: 0 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-
+.logo {
+  width: 100px;
+}
 .navItem {
   text-decoration: none;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: aquamarine;
 }

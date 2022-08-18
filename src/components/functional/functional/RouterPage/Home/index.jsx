@@ -1,5 +1,8 @@
 import { useLocation } from 'react-router-dom';
+import About from '../About';
+import Contacts from '../Contacts';
 import Layout from '../Layout';
+import Team from '../Team';
 
 const Home = () => {
   const location = useLocation();

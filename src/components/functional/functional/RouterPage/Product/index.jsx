@@ -1,19 +1,30 @@
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Layout from '../Layout';
 
 const Product = () => {
   const params = useParams();
+  console.log(params);
 
-  const productArray = [
-    { name: 'chocolate', id: 1 },
-    { name: 'banana', id: 2 },
-    { name: 'orange', id: 3 },
-    { name: 'watermelon', id: 4 },
+  const arrayProducts = [
+    { id: 1, name: 'Stolica', price: '100e' },
+    { id: 2, name: 'Banana', price: '2e' },
+    { id: 1, name: 'Sto', price: '500e' },
+    { id: 1, name: 'Kauc', price: '5000e' },
   ];
+
+  const selectedProduct = arrayProducts[params.productId];
 
   return (
     <Layout>
-      <p>Product</p>
+      {selectedProduct ? (
+        <div>
+          <p>{selectedProduct.id}</p>
+          <p>{selectedProduct.name}</p>
+          <p>{selectedProduct.price}</p>
+        </div>
+      ) : (
+        <p>Product not found</p>
+      )}
     </Layout>
   );
 };
